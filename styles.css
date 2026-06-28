@@ -867,6 +867,18 @@ a:focus-visible, .btn:focus-visible, .enter-link:focus-visible {
 }
 .footer-links a { color: var(--taupe); border-bottom: 1px solid transparent; }
 .footer-links a:hover { color: var(--amber); border-color: var(--amber-hair); }
+.footer-memorial {
+  max-width: var(--maxw);
+  margin: 1.7rem auto 0;
+  padding: 0 var(--gutter);
+  text-align: center;
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  color: var(--taupe);
+  opacity: 0.62;
+}
 
 /* =====================================================================
    RESPONSIVE
