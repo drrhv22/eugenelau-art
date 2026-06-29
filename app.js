@@ -72,7 +72,7 @@
   }
 
   /* -------------------------------------------------------------------
-     2. Catalogue: each card gets a per-work "Inquire" link that opens a
+     2. Catalog: each card gets a per-work "Inquire" link that opens a
         pre-filled mail draft naming that painting.
      ------------------------------------------------------------------- */
   Array.prototype.forEach.call(document.querySelectorAll(".c-item"), function (item) {
