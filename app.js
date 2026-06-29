@@ -70,4 +70,22 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
   }
+
+  /* -------------------------------------------------------------------
+     2. Catalogue: each card gets a per-work "Inquire" link that opens a
+        pre-filled mail draft naming that painting.
+     ------------------------------------------------------------------- */
+  Array.prototype.forEach.call(document.querySelectorAll(".c-item"), function (item) {
+    var titleEl = item.querySelector(".c-title");
+    var cap = item.querySelector("figcaption");
+    if (!titleEl || !cap) return;
+    var title = titleEl.textContent.trim();
+    var body = 'Hello Eugene,\n\nI\'d like to inquire about "' + title + '".\n\nMessage:\n';
+    var link = document.createElement("a");
+    link.className = "c-inquire";
+    link.href = "mailto:studio@eugenelau.art?subject=" +
+      encodeURIComponent("Inquiry \u2014 " + title) + "&body=" + encodeURIComponent(body);
+    link.textContent = "Inquire";
+    cap.appendChild(link);
+  });
 })();
