@@ -1002,6 +1002,13 @@ a:focus-visible, .btn:focus-visible, .enter-link:focus-visible {
 }
 .c-inquire:hover, .c-inquire:focus-visible { opacity: 1; border-color: var(--amber); }
 .c-sold { color:#d2685c; } .c-avail { color:#8a9a63; }
-.catalogue-cta { max-width:var(--maxw); margin:0 auto; padding:.5rem var(--gutter) clamp(3rem,8vw,6rem); text-align:center; }
-.catalogue-cta a { font-family:var(--ff-display); font-style:italic; font-size:clamp(1.15rem,2.4vw,1.55rem); color:var(--amber-soft); border-bottom:1px solid var(--amber-hair); padding-bottom:3px; transition:color .25s var(--ease); }
-.catalogue-cta a:hover { color:var(--amber); }
+.catalogue-cta { max-width:var(--maxw); margin:0 auto; padding:clamp(3rem,7vw,5rem) var(--gutter) clamp(3rem,8vw,6rem); text-align:center; }
+.catalogue-cta a {
+  display:inline-flex; align-items:center; gap:0.7rem;
+  font-family:var(--ff-body); font-size:0.95rem; font-weight:600;
+  letter-spacing:0.14em; text-transform:uppercase; color:var(--amber);
+  padding:0.85rem 1.6rem; border:1.5px solid var(--amber); border-radius:999px;
+  background:rgba(216,164,65,0.06); box-shadow:0 0 0 0 var(--amber-hair);
+  transition:color .25s var(--ease), background .25s var(--ease), box-shadow .25s var(--ease), gap .25s var(--ease);
+}
+.catalogue-cta a:hover { color:var(--umber); background:var(--amber); box-shadow:0 0 28px var(--amber-hair); gap:1rem; }
