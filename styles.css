@@ -755,6 +755,8 @@ a:focus-visible, .btn:focus-visible, .enter-link:focus-visible {
   padding-bottom: 2px;
 }
 .inquire-contact a:hover { border-color: var(--amber); }
+.inquire-grid--single { grid-template-columns: 1fr; max-width: 62ch; }
+.inquire-cta { margin-top: 1.7rem; }
 
 .inquire-form {
   display: flex;
